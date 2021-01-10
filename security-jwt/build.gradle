@@ -3,8 +3,8 @@ plugins {
 }
 
 ext {
-    nimbusJoseJwtVersion = '9.4'
-    bouncyCastleVersion = '1.67'
+    nimbusJoseJwtVersion = '9.4.1'
+    bouncyCastleVersion = '1.68'
 }
 
 dependencies {
@@ -15,7 +15,7 @@ dependencies {
     api "com.nimbusds:nimbus-jose-jwt:$nimbusJoseJwtVersion"
 
     testImplementation "org.bouncycastle:bcpkix-jdk15on:$bouncyCastleVersion"
-    testImplementation "org.bouncycastle:bcprov-jdk15on:1.67"
+    testImplementation "org.bouncycastle:bcprov-jdk15on:1.68"
 
     testImplementation "io.micronaut:micronaut-http-client"
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
